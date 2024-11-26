@@ -1,0 +1,89 @@
+<!-- activity_manage_spaces.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primaryColor"
+        android:title="Manage Spaces"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="4dp" />
+
+    <!-- Form to Add New Space -->
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/etSpaceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Space Name"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:id="@+id/etLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:inputType="text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:textColorHint="@color/black"
+            android:id="@+id/etCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Capacity"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnAddSpace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Space"
+            android:backgroundTint="@color/primaryColor"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- List of Spaces -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Existing Spaces"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:id="@+id/rvSpaces"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:elevation="2dp"
+        android:clipToPadding="false"
+        android:padding="8dp" />
+
+</LinearLayout>

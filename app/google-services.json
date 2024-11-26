@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "683127028580",
+    "project_id": "cargoyard-1e176",
+    "storage_bucket": "cargoyard-1e176.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:683127028580:android:1515d6de8bed906380d871",
+        "android_client_info": {
+          "package_name": "com.example.cargoyard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1y23YXY5S0rhMyZMSPCl_fyJZOhealTs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

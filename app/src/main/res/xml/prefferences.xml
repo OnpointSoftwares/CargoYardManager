@@ -1,0 +1,41 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Notifications preference -->
+    <SwitchPreferenceCompat
+        android:key="notifications"
+        android:title="Enable Notifications"
+        android:summary="Receive notifications for inventory updates"
+        android:defaultValue="true" />
+
+    <!-- Theme selection preference -->
+    <ListPreference
+        android:key="theme"
+        android:title="Select Theme"
+        android:summary="Choose between light or dark mode"
+        android:defaultValue="light"
+        android:entries="@array/theme_options"
+        android:entryValues="@array/theme_values" />
+
+    <!-- Sync frequency preference -->
+    <ListPreference
+        android:key="sync_frequency"
+        android:title="Data Sync Frequency"
+        android:summary="Select how often data should sync with the server"
+        android:defaultValue="realtime"
+        android:entries="@array/sync_options"
+        android:entryValues="@array/sync_values" />
+
+    <!-- Account management preference -->
+    <PreferenceCategory android:title="Account">
+        <Preference
+            android:key="account_info"
+            android:title="Account Information"
+            android:summary="View or update your account information" />
+
+        <Preference
+            android:key="sign_out"
+            android:title="Sign Out"
+            android:summary="Sign out of your account" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
