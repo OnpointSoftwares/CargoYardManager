@@ -28,25 +28,30 @@ class CargoYardManagerDashboard : AppCompatActivity() {
         val inventorycard:CardView=findViewById(R.id.cardinventory)
         val reportcard:CardView=findViewById(R.id.cardReports)
         val spacesCard:CardView=findViewById(R.id.cardSpaces)
-        val userType="admin"
+
         reportcard.setOnClickListener {
+            val userType="admin"
             val intent=Intent(this,ReportsActivity::class.java)
             intent.putExtra("user",userType)
             startActivity(intent)
         }
         usersCard.setOnClickListener {
+            val userType="admin"
             intent.putExtra("user",userType)
             startActivity(Intent(this,UserList::class.java))
         }
         inventorycard.setOnClickListener {
+            val userType="admin"
             intent.putExtra("user",userType)
             startActivity(Intent(this,ViewInventory::class.java))
         }
         settingscard.setOnClickListener {
+            val userType="admin"
             intent.putExtra("user",userType)
             startActivity(Intent(this,SettingsActivity::class.java))
         }
         spacesCard.setOnClickListener {
+            val userType="admin"
             intent.putExtra("user",userType)
             startActivity(Intent(this,ManageSpacesActivity::class.java))
         }

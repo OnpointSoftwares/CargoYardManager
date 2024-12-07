@@ -34,7 +34,7 @@ class ViewInventory : AppCompatActivity(), DialogRelocateItemFragment.RelocateIt
         val rvInventory = findViewById<RecyclerView>(R.id.rvInventory)
         rvInventory.layoutManager = LinearLayoutManager(this)
         rvInventory.adapter = inventoryAdapter
-        val userType=intent.extras!!.get("user")
+        val userType=intent.extras?.getString("user")
         val addButton: FloatingActionButton = findViewById(R.id.addButton)
         val searchView: SearchView = findViewById(R.id.searchView)
         if(userType=="supervisor")

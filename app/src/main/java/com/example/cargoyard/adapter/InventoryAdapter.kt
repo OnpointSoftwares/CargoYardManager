@@ -23,6 +23,9 @@ class InventoryAdapter(
         val itemWeightTextView: TextView = itemView.findViewById(R.id.tvItemWeight)
         val itemLocationTextView: TextView = itemView.findViewById(R.id.tvItemLocation)
         val itemStatusTextView: TextView = itemView.findViewById(R.id.tvItemStatus)
+        val itemOwnerName: TextView = itemView.findViewById(R.id.tvOwnerName)
+        val itemOwnerId: TextView = itemView.findViewById(R.id.tvId)
+        val itemOwnerPhone: TextView = itemView.findViewById(R.id.tvOwnerPhone)
         val relocateButton: Button = itemView.findViewById(R.id.relocateButton)
         val checkoutButton: Button = itemView.findViewById(R.id.checkoutButton)
     }
@@ -40,7 +43,9 @@ class InventoryAdapter(
         holder.itemQuantityTextView.text = "Quantity: ${inventoryItem.quantity}"
         holder.itemWeightTextView.text = "Weight: ${inventoryItem.weight} kg"
         holder.itemLocationTextView.text = "Location: ${inventoryItem.location}"
-
+        holder.itemOwnerName.text="Owner Name:${inventoryItem.ownerName}"
+        holder.itemOwnerId.text="Owner Id:${inventoryItem.ownerId} "
+        holder.itemOwnerPhone.text="Owner Phone: ${inventoryItem.ownerPhone}"
         // Set status text and color
         when (inventoryItem.status) {
             ItemStatus.AVAILABLE -> {

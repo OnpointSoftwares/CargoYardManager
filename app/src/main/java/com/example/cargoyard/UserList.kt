@@ -40,7 +40,7 @@ class UserList : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val userType=intent.extras!!.getString("user")
+        val userType=intent.extras?.getString("user")
         recyclerView = findViewById(R.id.rvUsers)
         recyclerView.layoutManager = LinearLayoutManager(this)
         userAdapter = UserAdapter(users)

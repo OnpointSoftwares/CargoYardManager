@@ -70,6 +70,30 @@
                 android:textSize="14sp"
                 android:textColor="@android:color/holo_green_dark"
                 android:layout_marginTop="4dp" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OwnerId"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OwnerName"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <TextView
+                android:textColor="@color/white"
+                android:id="@+id/tvOwnerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OwnerPhone"
+                android:textSize="18sp"
+                android:textStyle="bold" />
         </LinearLayout>
         <Button
             android:id="@+id/relocateButton"
